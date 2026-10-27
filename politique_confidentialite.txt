@@ -140,9 +140,9 @@ Utilisateurs en Californie (CCPA / CPRA)
 Si vous résidez en Californie, vous disposez en outre d'un droit de connaître les catégories de données collectées, de demander leur suppression, de corriger des données inexactes et de refuser la « vente » ou le « partage » de vos informations personnelles. Nous ne vendons pas vos informations personnelles. L'utilisation d'AdMob avec publicité personnalisée peut être considérée comme un « partage » au sens de la loi californienne : vous pouvez vous y opposer en retirant votre consentement publicitaire dans les réglages de l'Application. Nous ne faisons pas de discrimination à l'encontre des utilisateurs qui exercent ces droits.
 
 10. Suppression du compte et des données
-Vous pouvez supprimer vos sondages un par un depuis l'Application (bouton corbeille sur vos propres sondages). Pour supprimer l'ensemble de votre compte, votre profil et les interactions associées, deux chemins sont à votre disposition :
+Vous pouvez supprimer vos sondages un par un depuis l'Application (bouton corbeille sur vos propres sondages). Pour supprimer l'ensemble de votre compte, votre profil et les interactions associées:
 
-Ecrivez directement à slaiguedev@gmail.com : nous procédons à la suppression sous 30 jours et vous confirmons l'opération.
+Directement sur l'application
 
 La suppression du compte n'efface pas automatiquement les sondages qui ont déjà été largement diffusés sous forme de copies locales sur d'autres appareils ; en revanche, les données nominatives qui y sont associées sont supprimées ou anonymisées.
 
