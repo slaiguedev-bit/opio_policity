@@ -1,0 +1,171 @@
+Politique de confidentialité — Sondages
+Version 1.0 — Entrée en vigueur : 27 octobre 2026 — Dernière mise à jour : 27 octobre 2026
+
+Bienvenue dans Sondages (ci-après « l'Application »), une application mobile qui permet de créer des sondages, d'y répondre, de suivre des créateurs et de découvrir des questions selon ses centres d'intérêt.
+
+La présente politique explique quelles données sont traitées, pourquoi, par qui, pendant combien de temps et quels sont vos droits. Elle s'applique à l'Application éditée par Slaigue et à son service associé (identifiant technique : com.slaigue.opio).
+
+1. Qui est responsable de vos données ?
+Le responsable de traitement est :
+
+Slaigue
+74000 — France
+Contact confidentialité : slaiguedev@gmail.com
+
+Si vous avez une question ou souhaitez exercer vos droits, écrivez-nous à slaiguedev@gmail.com. Nous répondons dans un délai maximal d'un mois (prolongeable de deux mois pour les demandes complexes, conformément à l'article 12 du RGPD).
+
+L'Application s'appuie sur des prestataires techniques (hébergement, authentification, publicité) détaillés à la section 5.
+
+2. En résumé
+Nous collectons le minimum nécessaire : un compte, un profil, vos sondages et vos interactions.
+Vos goûts et votre historique de recommandations restent sur votre appareil : ils ne sont pas envoyés à nos serveurs.
+Nous ne collectons ni position GPS précise, ni contacts, ni journaux d'appels, ni données bancaires.
+Nous ne vendons pas vos données personnelles.
+La publicité (Google AdMob) n'est affichée qu'avec votre consentement, que vous pouvez retirer à tout moment depuis les réglages de l'Application.
+Vous pouvez demander l'accès, la correction ou la suppression de vos données.
+3. Données que nous traitons
+3.1 Compte et authentification
+Lors de la création d'un compte ou de la connexion :
+
+adresse e-mail et identifiant unique de compte ;
+mot de passe : transmis de façon chiffrée au service d'authentification Supabase Auth, qui en conserve uniquement une empreinte (hachage). L'Application ne stocke jamais votre mot de passe en clair ;
+jetons de session (token d'accès et de rafraîchissement), conservés localement sur votre appareil pour éviter de vous reconnecter à chaque lancement ;
+si vous choisissez « Se connecter avec Google » : un jeton d'identité est transmis au service d'authentification pour vérifier votre identité. Nous ne recevons ni votre mot de passe Google, ni l'accès à votre compte Google.
+Vous pouvez également utiliser certaines fonctions (sondages de démonstration, profil local, bibliothèque) sans créer de compte : dans ce cas, vos données restent uniquement sur l'appareil.
+
+3.2 Profil
+nom affiché, biographie ;
+avatar : un emoji et une couleur, ou une photo de profil que vous choisissez dans la galerie de votre appareil. Cette photo est redimensionnée puis stockée sous forme d'image encodée dans la base de données du service (et non dans un espace public).
+compteurs publics : nombre d'abonnés, d'abonnements, de vues, de likes et de sondages publiés.
+3.3 Contenus que vous publiez
+question, catégorie, type de sondage (QCM, oui/non, choix multiples, pourcentage, note, échelle, réaction), libellés des réponses, date de publication ;
+identifiant de l'auteur et informations de profil associées, affichées aux autres utilisateurs.
+N'écrivez pas de données sensibles (données de santé, opinions politiques, orientation sexuelle, etc.) dans vos sondages : ces contenus sont visibles par les autres utilisateurs.
+
+3.4 Interactions
+votes et réponses (y compris les réponses aux sondages « pourcentage », « note » ou « échelle ») ;
+likes, abonnements à des créateurs, vues de sondages (une vue par utilisateur et par sondage) ;
+signalements et préférences de masquage des sondages qui ne vous intéressent pas.
+3.5 Recommandations et bibliothèque
+Pour vous proposer un fil personnalisé, l'Application calcule localement sur votre appareil un profil de préférences à partir de vos votes, likes, abonnements et retours explicites (« plus comme ça » / « moins comme ça »). Ce profil contient des affinités par catégorie, par créateur, par type de sondage et par mots-clés, ainsi que la liste des sondages déjà vus ou masqués.
+
+Ces informations de recommandation ne sont pas transmises à nos serveurs ni à des tiers. Elles servent uniquement à ordonner les sondages affichés dans l'Application. Ce classement est un simple confort d'utilisation : il ne produit aucune décision automatisée ayant un effet juridique ou significatif à votre égard.
+
+3.6 Réglages de l'Application
+Vos préférences d'accessibilité (taille du texte, contraste renforcé, réduction des animations, lecture vocale, vibrations), de tri du fil et de consentement publicitaire sont enregistrées localement sur l'appareil.
+
+3.7 Données techniques et publicitaires
+Pour le fonctionnement du service et l'affichage de publicités, les prestataires suivants peuvent traiter automatiquement :
+
+adresse IP, type et modèle d'appareil, version du système d'exploitation, langue, fuseau horaire, identifiants de l'application ;
+identifiant publicitaire de l'appareil (GAID / IDFA) et état de votre choix relatif au suivi publicitaire ;
+données d'interaction avec les publicités (affichage, clic) et données de diagnostic (erreurs, plantages) ;
+journaux techniques des requêtes adressées au service d'hébergement.
+Lorsque vous activez la lecture vocale d'une question, le texte est transmis au moteur de synthèse vocale de votre système d'exploitation. Selon la configuration de votre appareil, ce traitement peut être effectué localement ou par le service de synthèse du fabricant ; l'Application n'envoie pas elle-même ce texte à un service tiers.
+
+3.8 Données que nous ne collectons pas
+L'Application ne demande pas et ne collecte pas : position de géolocalisation précise, carnet d'adresses, historique d'appels ou de SMS, microphone (hors moteur de synthèse vocale du système), enregistrements biométriques, données de paiement, ni contenu de vos autres applications.
+
+3.9 Permissions de l'appareil
+Selon votre plateforme, l'Application peut utiliser : l'accès réseau (connexion au service), les vibrations (retour tactile, désactivable) et le sélecteur de photos du système (uniquement si vous choisissez une photo de profil ; l'accès est limité au fichier que vous sélectionnez). Vous pouvez refuser ou retirer ces autorisations dans les réglages de votre appareil ; certaines fonctions deviennent alors indisponibles.
+
+4. Pourquoi traitons-nous ces données ?
+Finalité	Données utilisées	Base légale (RGPD)
+Créer et gérer votre compte, vous authentifier	e-mail, mot de passe, jetons, jeton Google	Exécution du contrat (art. 6.1.b)
+Publier et afficher les sondages	question, catégorie, type, réponses, profil auteur	Exécution du contrat
+Enregistrer votes, likes, vues et abonnements	identifiant de compte, identifiants de sondages	Exécution du contrat
+Afficher les compteurs, classements et profils publics	interactions agrégées	Exécution du contrat et intérêt légitime (art. 6.1.f)
+Ordonner votre fil selon vos goûts	préférences locales, interactions passées	Intérêt légitime — traitement local, sans effet juridique
+Ajouter une photo de profil	image sélectionnée	Consentement (art. 6.1.a)
+Afficher des publicités personnalisées via AdMob	identifiant publicitaire, données techniques	Consentement (art. 6.1.a)
+Sécurité, prévention des abus et de la fraude, journaux techniques	adresse IP, journaux, identifiants	Intérêt légitime et obligation légale (art. 6.1.c)
+Répondre à vos demandes et respecter nos obligations légales	données de contact, historique de la demande	Obligation légale et intérêt légitime
+Lorsque le traitement repose sur votre consentement, vous pouvez le retirer à tout moment (voir sections 6 et 9) sans que cela n'affecte la licéité des traitements antérieurs.
+
+5. Où sont vos données et qui peut y accéder ?
+Sur votre appareil
+L'Application conserve localement : votre profil, votre photo d'avatar, vos préférences d'accessibilité, vos sondages créés hors ligne, vos votes, vos likes, vos abonnements, votre profil de recommandations et votre bibliothèque. Ces fichiers sont supprimés lorsque vous désinstallez l'Application (ou effacez ses données depuis les réglages du système).
+
+Chez nos prestataires
+Destinataire	Rôle	Données concernées
+Supabase (hébergement, base PostgreSQL, authentification)	Sous-traitant — région : [REGION_HEBERGEMENT]	compte, profil, sondages, votes, likes, vues, abonnements, journaux
+Google — AdMob / Google Mobile Ads	Responsable conjoint ou indépendant selon le contexte	identifiant publicitaire, données techniques, interactions publicitaires
+Google — Google Sign-In / Play Services	Fournisseur d'identité	jeton d'identité, identifiants techniques
+Système d'exploitation (synthèse vocale, vibrations, sélecteur de photos)	Fonctionnalité locale	texte lu à voix haute, fichier image choisi
+Les échanges avec nos serveurs sont chiffrés (HTTPS / TLS). L'accès à la base de données est protégé par des jetons d'authentification et par des règles d'autorisation au niveau des lignes (Row Level Security). Aucune mesure de sécurité n'étant absolue, nous vous invitons à choisir un mot de passe unique et à ne pas le partager.
+
+Ce que nous ne faisons pas
+Nous ne vendons pas vos données personnelles et ne les transmettons pas à des courtiers de données. Nous ne les utilisons pas pour de la publicité ciblée par nos propres moyens : seule la publicité fournie par AdMob peut être personnalisée, et uniquement avec votre consentement.
+
+6. Publicité et consentement
+L'Application peut afficher quelques publicités entre les sondages, fournies par Google AdMob. Elles sont volontairement peu fréquentes et espacées dans le temps.
+
+Avant tout affichage de publicité personnalisée, votre consentement est recueilli (notamment pour les utilisateurs de l'Espace économique européen, du Royaume-Uni et de la Suisse) conformément aux règles Google relatives au consentement (UMP / CMP) et à la directive ePrivacy.
+Si vous refusez, aucune publicité personnalisée n'est diffusée ; une publicité non personnalisée peut éventuellement être affichée, ou aucune publicité selon votre choix.
+Vous pouvez modifier ou retirer votre consentement à tout moment depuis ♿ Accessibilité → Consentement publicitaire, et masquer entièrement les publicités depuis ♿ Accessibilité → Masquer les pubs.
+Vous pouvez également réinitialiser ou limiter l'identifiant publicitaire dans les réglages de votre appareil (Android : Confidentialité → Publicité ; iOS : Confidentialité et sécurité → Suivi).
+Pour en savoir plus sur les données traitées par Google à des fins publicitaires, consultez la <a href="https://policies.google.com/privacy" rel="noopener">politique de confidentialité de Google</a> et la page <a href="https://policies.google.com/technologies/ads" rel="noopener">Google et la publicité</a>.
+
+7. Durée de conservation
+Les durées ci-dessous sont des durées maximales indicatives ; elles sont adaptées si une obligation légale impose une conservation plus longue.
+
+Donnée	Durée de conservation
+Compte et profil	Pendant toute la durée du compte, puis 30 jours après sa suppression (sauvegardes et purge)
+Sondages publiés	Jusqu'à leur suppression par l'auteur ou celle du compte ; au maximum 24 mois après la dernière activité du compte
+Votes, likes, vues, abonnements	Pendant la durée du compte ; les statistiques agrégées et anonymisées peuvent être conservées au-delà
+Journaux techniques du serveur	30 jours
+Données publicitaires et trace de consentement	Selon les durées définies par Google et la réglementation applicable (généralement 13 mois maximum pour la trace de consentement)
+Données locales (préférences, recommandations, bibliothèque)	Jusqu'à la désinstallation de l'Application ou l'effacement de ses données
+8. Sécurité
+Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables : chiffrement des échanges (TLS), authentification par jetons, règles d'accès au niveau de la base de données, absence de stockage du mot de passe en clair, minimisation des données envoyées (le profil de recommandations reste sur l'appareil) et limitations de débit sur les requêtes.
+
+Les photos de profil sont stockées dans la base de données du service et ne sont pas exposées dans un espace public non contrôlé. Nous ne demandons aucune donnée sensible.
+
+Malgré ces mesures, aucun service en ligne n'est totalement à l'abri d'un incident. En cas de violation de données susceptible d'engendrer un risque élevé pour vos droits, nous vous en informerons et notifierons l'autorité compétente conformément aux articles 33 et 34 du RGPD.
+
+9. Vos droits
+Conformément au RGPD et à la loi Informatique et Libertés, vous disposez des droits suivants :
+
+Accès : obtenir une copie des données vous concernant ;
+Rectification : corriger des données inexactes (vous pouvez modifier votre nom, votre bio et votre avatar directement dans l'Application) ;
+Effacement : demander la suppression de vos données et de votre compte ;
+Limitation : suspendre temporairement certains traitements ;
+Opposition : vous opposer aux traitements fondés sur l'intérêt légitime ;
+Portabilité : recevoir vos données dans un format structuré et lisible par machine ;
+Retrait du consentement : à tout moment, pour la publicité personnalisée et la photo de profil ;
+Réclamation : introduire une réclamation auprès de l'autorité de contrôle. En France, il s'agit de la CNIL — <a href="https://www.cnil.fr" rel="noopener">www.cnil.fr</a> — ou de l'autorité compétente de votre pays de résidence.
+Pour exercer vos droits, contactez [EMAIL_DE_CONTACT] en précisant l'objet de votre demande. Une vérification d'identité peut être demandée afin de protéger votre compte. La réponse intervient dans un délai d'un mois maximum.
+
+Utilisateurs en Californie (CCPA / CPRA)
+Si vous résidez en Californie, vous disposez en outre d'un droit de connaître les catégories de données collectées, de demander leur suppression, de corriger des données inexactes et de refuser la « vente » ou le « partage » de vos informations personnelles. Nous ne vendons pas vos informations personnelles. L'utilisation d'AdMob avec publicité personnalisée peut être considérée comme un « partage » au sens de la loi californienne : vous pouvez vous y opposer en retirant votre consentement publicitaire dans les réglages de l'Application. Nous ne faisons pas de discrimination à l'encontre des utilisateurs qui exercent ces droits.
+
+10. Suppression du compte et des données
+Vous pouvez supprimer vos sondages un par un depuis l'Application (bouton corbeille sur vos propres sondages). Pour supprimer l'ensemble de votre compte, votre profil et les interactions associées, deux chemins sont à votre disposition :
+
+Ecrivez directement à slaiguedev@gmail.com : nous procédons à la suppression sous 30 jours et vous confirmons l'opération.
+
+La suppression du compte n'efface pas automatiquement les sondages qui ont déjà été largement diffusés sous forme de copies locales sur d'autres appareils ; en revanche, les données nominatives qui y sont associées sont supprimées ou anonymisées.
+
+La désinstallation de l'Application supprime les données stockées localement, mais pas celles qui sont hébergées sur nos serveurs : pensez à demander la suppression du compte si vous souhaitez un effacement complet.
+
+11. Mineurs
+L'Application n'est pas destinée aux enfants de moins de 13 ans (ou de moins de 16 ans dans l'Union européenne, sauf disposition nationale plus permissive). Nous ne collectons pas sciemment de données personnelles auprès de mineurs. Si vous êtes parent ou tuteur et pensez que votre enfant nous a transmis des données, contactez [EMAIL_DE_CONTACT] : nous supprimerons ces informations dans les plus brefs délais.
+
+12. Transferts hors de l'Union européenne
+Certains de nos prestataires (notamment Supabase et Google) peuvent traiter des données en dehors de l'Espace économique européen, en particulier aux États-Unis. Dans ce cas, les transferts sont encadrés par des garanties appropriées : clauses contractuelles types de la Commission européenne, décision d'adéquation (dont le Data Privacy Framework pour les entreprises certifiées) et mesures complémentaires de protection.
+
+Vous pouvez obtenir une copie de ces garanties en écrivant à [EMAIL_DE_CONTACT]. Vérifiez la région d'hébergement de votre projet : [REGION_HEBERGEMENT].
+
+13. Modifications de la présente politique
+Nous pouvons modifier cette politique pour refléter l'évolution de l'Application, de nos prestataires ou de la réglementation. La date de « dernière mise à jour » en haut de page est alors actualisée. Si une modification affecte substantiellement vos droits, nous vous en informerons dans l'Application ou par e-mail avant son entrée en vigueur.
+
+Nous vous encourageons à consulter régulièrement cette page.
+
+14. Nous contacter
+Pour toute question relative à cette politique ou à vos données personnelles :
+
+Slaigue
+74600 — Annecy
+Confidentialité : slaiguedev@gmail.com
+
+Cette politique est distincte des conditions générales d'utilisation (CGU) de l'Application.
