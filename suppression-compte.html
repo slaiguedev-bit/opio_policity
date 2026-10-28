@@ -3,75 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Demander la suppression de son compte Sondages et des données associées.">
+<meta name="description" content="Supprimer son compte Sondages et les données associées.">
 <meta name="robots" content="index,follow">
 <title>Supprimer mon compte — Sondages</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--violet:#7c5cff;--rose:#ff4d8d;--vert:#1fc98a;--encre:#1b1730;--muet:#605a7a;
---fond:#f5f3ff;--carte:#fff;--bord:#e7e1f7;--alerte:#ffdf7a}
+[hidden]{display:none!important}
+:root{--violet:#7c5cff;--rose:#ff4d8d;--encre:#1b1730;--muet:#605a7a;--fond:#f5f3ff;--carte:#fff;--bord:#e7e1f7}
 html{scroll-behavior:smooth}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-color:var(--encre);background:var(--fond);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
-a{color:#6344dd;text-underline-offset:2px}
-a:hover{color:var(--rose)}
-.hero{background:linear-gradient(115deg,#2a1a78 0%,#5a2a9c 45%,#a3266f 100%);
-color:#fff;padding:58px 24px 72px;position:relative;overflow:hidden}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--encre);background:var(--fond);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:#6344dd;text-underline-offset:2px}a:hover{color:var(--rose)}
+.hero{background:linear-gradient(115deg,#2a1a78 0%,#5a2a9c 45%,#a3266f 100%);color:#fff;padding:58px 24px 72px;position:relative;overflow:hidden}
 .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(10px);opacity:.5}
 .hero:before{width:440px;height:440px;background:radial-gradient(circle,#9a6bff,transparent 68%);top:-230px;left:-100px}
 .hero:after{width:400px;height:400px;background:radial-gradient(circle,#ff5a9e,transparent 68%);bottom:-250px;right:-70px}
 .hero-in{max-width:900px;margin:0 auto;position:relative;z-index:2}
-.badge{display:inline-block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;
-border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:7px 15px;
-background:rgba(255,255,255,.1);color:#efe6ff}
+.badge{display:inline-block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:7px 15px;background:rgba(255,255,255,.1);color:#efe6ff}
 h1{font-size:clamp(28px,4.6vw,46px);line-height:1.12;margin:18px 0 12px;font-weight:800;letter-spacing:-.02em}
 .hero p{color:rgba(255,255,255,.87);max-width:680px}
 .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.meta span{font-size:12.5px;padding:8px 14px;border-radius:10px;background:rgba(255,255,255,.13);
-border:1px solid rgba(255,255,255,.22)}
+.meta span{font-size:12.5px;padding:8px 14px;border-radius:10px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22)}
 .wrap{max-width:900px;margin:-34px auto 0;padding:0 20px 70px;position:relative;z-index:3}
-.card{background:var(--carte);border:1px solid var(--bord);border-radius:18px;padding:32px 34px;
-margin-bottom:20px;box-shadow:0 14px 40px rgba(50,30,100,.07)}
-.card h2{font-size:21px;margin:0 0 14px;letter-spacing:-.01em;scroll-margin-top:20px}
-.card h3{font-size:16px;margin:22px 0 8px;color:#4a368f}
+.card{background:var(--carte);border:1px solid var(--bord);border-radius:18px;padding:32px 34px;margin-bottom:20px;box-shadow:0 14px 40px rgba(50,30,100,.07)}
+.card h2{font-size:21px;margin:0 0 14px;letter-spacing:-.01em}
 .card p{margin:0 0 13px}
-.card ul{margin:0 0 14px;padding-left:22px}
-.card li{margin:6px 0}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 4px}
 .tile{border:1px solid var(--bord);border-radius:14px;padding:16px 18px;background:#fbfaff}
 .tile.ok{border-color:rgba(31,201,138,.4);background:#f2fdf8}
 .tile.keep{border-color:rgba(124,92,255,.3);background:#f7f4ff}
 .tile h4{font-size:14px;margin-bottom:8px}
-.tile ul{margin:0;padding-left:18px;font-size:14px}
-.tile li{margin:4px 0}
-.alerte{border-left:4px solid var(--rose);background:#fff2f7;border-radius:0 12px 12px 0;
-padding:14px 18px;margin:16px 0;font-size:14.5px}
-form{margin-top:16px}
-label{display:block;font-size:13.5px;font-weight:700;margin:14px 0 6px}
-input[type=email],textarea{width:100%;font:inherit;font-size:15px;color:var(--encre);
-padding:12px 14px;border:1px solid #d5cdec;border-radius:11px;background:#fff}
-input[type=email]:focus,textarea:focus{outline:3px solid rgba(124,92,255,.22);border-color:var(--violet)}
-textarea{min-height:96px;resize:vertical}
-.check{display:flex;gap:10px;align-items:flex-start;margin:16px 0;font-size:14px}
-.check input{width:19px;height:19px;flex:none;margin-top:3px;accent-color:var(--violet)}
-.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:15px;
-color:#fff;padding:14px 24px;border-radius:12px;
-background:linear-gradient(100deg,var(--violet),var(--rose));
-box-shadow:0 10px 24px rgba(124,92,255,.32)}
-.btn:hover{filter:brightness(1.07)}
-.btn.sec{background:rgba(124,92,255,.12);color:#4a368f;box-shadow:none;margin-left:8px}
-.hint{font-size:13px;color:var(--muet);margin-top:12px}
-.val{background:#fff2c9;color:#4a3800;padding:1px 5px;border-radius:5px;font-weight:700}
+.tile ul{margin:0;padding-left:18px;font-size:14px}.tile li{margin:4px 0}
+.alerte{border-left:4px solid var(--rose);background:#fff2f7;border-radius:0 12px 12px 0;padding:14px 18px;margin:16px 0;font-size:14.5px}
 .steps{counter-reset:s;list-style:none;padding:0;margin:8px 0 18px}
 .steps li{counter-increment:s;position:relative;padding:10px 0 10px 46px;border-bottom:1px solid var(--bord)}
 .steps li:last-child{border-bottom:0}
-.steps li:before{content:counter(s);position:absolute;left:0;top:9px;width:30px;height:30px;
-display:grid;place-items:center;border-radius:9px;color:#fff;font-weight:700;font-size:14px;
-background:linear-gradient(135deg,var(--violet),var(--rose))}
+.steps li:before{content:counter(s);position:absolute;left:0;top:9px;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;color:#fff;font-weight:700;font-size:14px;background:linear-gradient(135deg,var(--violet),var(--rose))}
+.tabs{display:flex;gap:8px;margin:6px 0 4px;flex-wrap:wrap}
+.tab{font:inherit;font-weight:700;font-size:14px;padding:10px 16px;border-radius:10px;border:1px solid var(--bord);background:#fbfaff;color:#4a368f;cursor:pointer}
+.tab.on{background:linear-gradient(100deg,var(--violet),var(--rose));color:#fff;border-color:transparent}
+label{display:block;font-size:13.5px;font-weight:700;margin:14px 0 6px}
+input[type=email],input[type=password],input[type=text]{width:100%;font:inherit;font-size:15px;color:var(--encre);padding:12px 14px;border:1px solid #d5cdec;border-radius:11px;background:#fff}
+input:focus{outline:3px solid rgba(124,92,255,.22);border-color:var(--violet)}
+.check{display:flex;gap:10px;align-items:flex-start;margin:16px 0;font-size:14px;font-weight:400}
+.check input{width:19px;height:19px;flex:none;margin-top:3px;accent-color:var(--violet)}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:15px;color:#fff;padding:14px 24px;border-radius:12px;background:linear-gradient(100deg,var(--violet),var(--rose));box-shadow:0 10px 24px rgba(124,92,255,.32);margin-top:14px}
+.btn:hover{filter:brightness(1.07)}.btn:disabled{opacity:.55;cursor:wait}
+.btn.danger{background:linear-gradient(100deg,#e0245e,#b3123f)}
+.hint{font-size:13.5px;color:var(--muet);margin-top:12px}
+.good{color:#0b7a52;font-weight:600}.bad{color:#c0194f;font-weight:600}
+.val{background:#fff2c9;color:#4a3800;padding:1px 5px;border-radius:5px;font-weight:700}
 footer{text-align:center;color:var(--muet);font-size:12.5px;padding:0 20px 46px}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.card{padding:24px 20px}.hero{padding:44px 20px 64px}}
-@media print{body{background:#fff}.hero{background:#2a1a78!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.card{box-shadow:none}form,.btn{display:none}}
+@media print{body{background:#fff}.hero{background:#2a1a78!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.card{box-shadow:none}}
 </style>
 </head>
 <body>
@@ -79,8 +62,8 @@ footer{text-align:center;color:var(--muet);font-size:12.5px;padding:0 20px 46px}
 <header class="hero"><div class="hero-in">
   <span class="badge">Sondages · Vos données</span>
   <h1>Supprimer mon compte</h1>
-  <p>Cette page vous permet de demander la suppression de votre compte <strong>Sondages</strong> et des données qui y sont associées, sans avoir besoin de réinstaller l'application.</p>
-  <div class="meta"><span>📌 Version 1.0</span><span>📅 27 octobre 2026</span><span>⏱️ Traitement sous 30 jours</span></div>
+  <p>Supprimez vous-même votre compte <strong>Sondages</strong> et les données associées, sans réinstaller l'application. Votre identité est vérifiée automatiquement.</p>
+  <div class="meta"><span>📌 Version 1.1</span><span>📅 28 octobre 2026</span><span>⚡ Suppression immédiate</span></div>
 </div></header>
 
 <div class="wrap">
@@ -88,13 +71,12 @@ footer{text-align:center;color:var(--muet);font-size:12.5px;padding:0 20px 46px}
   <section class="card">
     <h2>1. Comment ça marche</h2>
     <ol class="steps">
-      <li>Remplissez le formulaire ci-dessous avec <strong>l'adresse e-mail du compte</strong> à supprimer.</li>
-      <li>Validez : votre messagerie s'ouvre avec un message prêt à envoyer à <strong class="val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bccfd0ddd5dbc9d9d8d9cafcdbd1ddd5d092dfd3d1">slaiguedev@gmail.com</a></strong>.</li>
-      <li>Nous vérifions votre identité (une simple confirmation peut être demandée) puis nous supprimons le compte et les données associées sous <strong>30 jours maximum</strong>.</li>
-      <li>Vous recevez une confirmation par e-mail une fois l'opération terminée.</li>
+      <li>Prouvez que le compte est le vôtre : avec <strong>votre mot de passe</strong>, ou avec <strong>un lien de confirmation envoyé par e-mail</strong> (utile si vous vous connectez avec Google ou si vous avez oublié votre mot de passe).</li>
+      <li>Confirmez la suppression.</li>
+      <li>Le compte et les données associées sont supprimés <strong>immédiatement</strong>. Les sauvegardes techniques sont purgées sous <strong>30 jours</strong>.</li>
     </ol>
-    <div class="alerte">⚠️ <strong>Désinstaller l'application ne supprime pas votre compte.</strong> Les données hébergées sur nos serveurs restent actives tant que vous n'avez pas demandé leur suppression. La désinstallation efface en revanche toutes les données stockées localement sur votre appareil.</div>
-    <p>Vous pouvez également lancer cette demande directement depuis l'application : <strong>Profil → 🗑 Supprimer mon compte</strong>, qui le supprime directement</p>
+    <div class="alerte">⚠️ <strong>Désinstaller l'application ne supprime pas votre compte.</strong> Les données hébergées sur nos serveurs restent actives tant que vous n'avez pas supprimé le compte. La désinstallation efface en revanche les données stockées sur votre appareil.</div>
+    <p>Depuis l'application, le même résultat s'obtient via <strong>Profil → 🗑 Supprimer mon compte</strong>.</p>
   </section>
 
   <section class="card">
@@ -108,99 +90,163 @@ footer{text-align:center;color:var(--muet);font-size:12.5px;padding:0 20px 46px}
           <li>Sondages que vous avez publiés et leurs options</li>
           <li>Vos votes, likes, vues et abonnements</li>
           <li>Vos abonnés et liens de suivi</li>
-          <li>Vos préférences et historiques côté serveur</li>
+          <li>Signalements que vous avez effectués</li>
         </ul>
       </div>
       <div class="tile keep"><h4>📦 Peut être conservé</h4>
         <ul>
-          <li>Statistiques agrégées et <strong>anonymisées</strong> (aucun lien avec vous)</li>
+          <li>Statistiques agrégées et <strong>anonymisées</strong></li>
           <li>Sauvegardes techniques, purgées sous 30 jours</li>
           <li>Données dont la loi impose la conservation (sécurité, lutte contre la fraude)</li>
           <li>Données publicitaires détenues par Google, selon ses propres durées</li>
         </ul>
       </div>
     </div>
-    <p>Si vous avez utilisé l'application sans créer de compte, toutes vos données étaient déjà uniquement sur votre appareil : il suffit de désinstaller l'application ou d'effacer ses données.</p>
+    <p>Si vous avez utilisé l'application sans créer de compte, vos données sont uniquement sur votre appareil : désinstallez l'application ou effacez ses données.</p>
   </section>
 
   <section class="card">
-    <h2>3. Formulaire de demande</h2>
-    <p>Le formulaire prépare un e-mail : aucun intermédiaire ne reçoit votre demande, elle part directement vers <strong class="val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcafb0bdb5bba9b9b8b9aa9cbbb1bdb5b0f2bfb3b1">slaiguedev@gmail.com</a></strong>.</p>
-    <form id="f" onsubmit="return envoyer(event)">
-      <label for="mail">Adresse e-mail du compte *</label>
-      <input id="mail" type="email" required placeholder="vous@exemple.fr" autocomplete="email">
+    <h2>3. Supprimer mon compte</h2>
 
-      <label for="msg">Précision (facultatif)</label>
-      <textarea id="msg" placeholder="Ex. : je ne me souviens plus de mon mot de passe, mais je veux supprimer ce compte."></textarea>
+    <div id="s-choose">
+      <div class="tabs">
+        <button type="button" class="tab on" id="t-pw" onclick="tab('pw')">🔑 Avec mon mot de passe</button>
+        <button type="button" class="tab" id="t-link" onclick="tab('link')">✉️ Par lien e-mail</button>
+      </div>
 
-      <label class="check"><input id="ok" type="checkbox" required>
-        <span>Je confirme vouloir supprimer définitivement mon compte <strong>Sondages</strong> et les données associées. Je comprends que cette action est irréversible.</span></label>
+      <form id="p-pw" onsubmit="return loginPw(event)">
+        <label for="e1">Adresse e-mail du compte</label>
+        <input id="e1" type="email" required autocomplete="email" placeholder="vous@exemple.fr">
+        <label for="pw">Mot de passe</label>
+        <input id="pw" type="password" required autocomplete="current-password">
+        <button class="btn" id="b1" type="submit">Continuer</button>
+        <p class="hint" id="m1" role="status"></p>
+      </form>
 
-      <button class="btn" type="submit">📨 Envoyer ma demande</button>
-      <a class="btn sec" id="direct" href="#">Écrire directement</a>
-      <p class="hint" id="retour"></p>
-    </form>
-    <noscript><p class="alerte">JavaScript est désactivé : écrivez directement à
-      <a href="mailto:slaiguedev@gmail.com?subject=Suppression%20de%20compte%20Sondages">slaiguedev@gmail.com</a>
-      en indiquant l'adresse e-mail du compte.</p></noscript>
+      <form id="p-link" onsubmit="return sendLink(event)" hidden>
+        <p class="hint" style="margin-top:4px">Nous envoyons un lien de confirmation à l'adresse du compte. Cela fonctionne aussi pour les comptes créés avec Google.</p>
+        <label for="e2">Adresse e-mail du compte</label>
+        <input id="e2" type="email" required autocomplete="email" placeholder="vous@exemple.fr">
+        <button class="btn" id="b2" type="submit">Envoyer le lien</button>
+        <p class="hint" id="m2" role="status"></p>
+      </form>
+    </div>
+
+    <div id="s-confirm" hidden>
+      <p>Compte vérifié : <strong class="val" id="who"></strong></p>
+      <div class="alerte">Cette action est <strong>définitive</strong> : votre compte, votre profil et vos sondages seront supprimés.</div>
+      <label class="check"><input id="ok" type="checkbox">
+        <span>Je confirme vouloir supprimer définitivement mon compte <strong>Sondages</strong> et les données associées.</span></label>
+      <label for="typed">Tapez <strong>SUPPRIMER</strong> pour confirmer</label>
+      <input id="typed" type="text" autocomplete="off" autocapitalize="characters">
+      <button class="btn danger" id="b3" type="button" onclick="del()">🗑 Supprimer définitivement</button>
+      <button class="btn" style="background:rgba(124,92,255,.12);color:#4a368f;box-shadow:none;margin-left:8px" type="button" onclick="location.href=location.pathname">Annuler</button>
+      <p class="hint" id="m3" role="status"></p>
+    </div>
+
+    <div id="s-done" hidden>
+      <p class="good">✅ Votre compte a été supprimé.</p>
+      <p>Vos données ont été effacées de nos serveurs. Vous pouvez fermer cette page. Merci d'avoir utilisé Sondages.</p>
+    </div>
+
+    <p class="hint">Un problème ? Écrivez à <a href="mailto:slaiguedev@gmail.com?subject=Suppression%20de%20compte%20Sondages">slaiguedev@gmail.com</a> depuis l'adresse du compte : nous traitons la demande sous 30 jours maximum.</p>
   </section>
 
   <section class="card">
     <h2>4. Vos autres droits</h2>
     <p>Vous pouvez aussi demander une copie de vos données, leur rectification ou la limitation de leur traitement. Conformément au RGPD, nous répondons sous un mois. Vous pouvez introduire une réclamation auprès de la <a href="https://www.cnil.fr" rel="noopener">CNIL</a>.</p>
-    <p>Consultez notre <a href="politique_confidentialite.html" rel="noopener">politique de confidentialité</a> pour le détail des traitements, des destinataires et des durées de conservation.</p>
+    <p>Consultez notre <a href="politique_confidentialite.html">politique de confidentialité</a> pour le détail des traitements, des destinataires et des durées de conservation.</p>
   </section>
 
   <section class="card">
     <h2>5. Contact</h2>
     <p><strong>Éditeur :</strong> <strong class="val">Slaigue</strong><br>
        <strong>Application :</strong> Sondages (<strong class="val">com.slaigue.opio</strong>)<br>
-       <strong>Confidentialité :</strong> <strong class="val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="156679747c726070717063557278747c793b767a78">slaiguedev@gmail.com</a></strong></p>
+       <strong>Confidentialité :</strong> <a href="mailto:slaiguedev@gmail.com">slaiguedev@gmail.com</a></p>
   </section>
 
 </div>
 <footer>Suppression de compte — Sondages · <a href="index.html">Politique de confidentialité</a></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-var EMAIL = "slaiguedev@gmail.com";
-var SUJET = "Demande de suppression de compte — Sondages";
+<script>
+var SB = "https://kbbbmywzpdodorsyjwku.supabase.co";
+var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtiYmJteXd6cGRvZG9yc3lqd2t1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMwOTI3ODMsImV4cCI6MjEwODY2ODc4M30.xi6U3qArJS4BHlQT5_PGHdeb83ZRjPIFPkbl2nWejo8";
+var token = null;
 
-function lien(){
-  var m = document.getElementById("mail").value.trim();
-  var x = document.getElementById("msg").value.trim();
-  var corps = "Bonjour,\n\nJe demande la suppression définitive de mon compte Sondages et de toutes les données associées.\n\n"
-    + "Adresse e-mail du compte : " + m + "\n"
-    + "Identifiant de l'application : com.slaigue.opio\n\n"
-    + (x ? "Précision : " + x + "\n\n" : "")
-    + "Je confirme être le titulaire de ce compte.\n\nCordialement.";
-  return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(SUJET) + "&body=" + encodeURIComponent(corps);
+function $(i){ return document.getElementById(i); }
+function show(id){ ["s-choose","s-confirm","s-done"].forEach(function(x){ $(x).hidden = (x !== id); }); }
+function msg(id, t, ok){ var e = $(id); e.textContent = t; e.className = "hint " + (ok ? "good" : "bad"); }
+function api(path, opt){
+  opt = opt || {};
+  opt.headers = Object.assign({ "apikey": KEY, "Content-Type": "application/json" }, opt.headers || {});
+  return fetch(SB + path, opt);
 }
+function tab(w){
+  $("p-pw").hidden = (w !== "pw"); $("p-link").hidden = (w !== "link");
+  $("t-pw").className = "tab" + (w === "pw" ? " on" : "");
+  $("t-link").className = "tab" + (w === "link" ? " on" : "");
+}
+function toConfirm(email){ $("who").textContent = email; show("s-confirm"); }
 
-function envoyer(e){
+async function loginPw(e){
   e.preventDefault();
-  var m = document.getElementById("mail");
-  var ok = document.getElementById("ok");
-  if(!m.value.trim() || !m.checkValidity()){
-    document.getElementById("retour").textContent = "⚠️ Indiquez une adresse e-mail valide.";
-    m.focus(); return false;
-  }
-  if(!ok.checked){
-    document.getElementById("retour").textContent = "⚠️ Cochez la case de confirmation.";
-    return false;
-  }
-  document.getElementById("retour").textContent = "✅ Votre messagerie s'ouvre… Si rien ne se passe, utilisez « Écrire directement ».";
-  window.location.href = lien();
-  return false;
+  var b = $("b1"); b.disabled = true; msg("m1", "Vérification…", true);
+  try{
+    var r = await api("/auth/v1/token?grant_type=password", { method: "POST",
+      body: JSON.stringify({ email: $("e1").value.trim(), password: $("pw").value }) });
+    var d = await r.json().catch(function(){ return {}; });
+    if(!r.ok || !d.access_token){
+      msg("m1", "E-mail ou mot de passe incorrect. Si vous vous connectez avec Google, utilisez l'onglet « Par lien e-mail ».", false);
+    } else {
+      token = d.access_token; $("pw").value = "";
+      toConfirm((d.user && d.user.email) || $("e1").value.trim());
+    }
+  }catch(_){ msg("m1", "Connexion impossible. Vérifiez votre réseau.", false); }
+  b.disabled = false; return false;
 }
 
-document.getElementById("mail").addEventListener("input", function(){
-  document.getElementById("direct").href = lien();
-});
-document.getElementById("msg").addEventListener("input", function(){
-  document.getElementById("direct").href = lien();
-});
-document.getElementById("direct").href =
-  "mailto:" + EMAIL + "?subject=" + encodeURIComponent(SUJET);
+async function sendLink(e){
+  e.preventDefault();
+  var b = $("b2"); b.disabled = true; msg("m2", "Envoi…", true);
+  try{
+    var back = encodeURIComponent(location.origin + location.pathname);
+    await api("/auth/v1/otp?redirect_to=" + back, { method: "POST",
+      body: JSON.stringify({ email: $("e2").value.trim(), create_user: false }) });
+    msg("m2", "Si un compte existe avec cette adresse, un e-mail de confirmation vient d'être envoyé. Pensez à vérifier vos courriers indésirables.", true);
+  }catch(_){ msg("m2", "Envoi impossible. Vérifiez votre réseau.", false); }
+  b.disabled = false; return false;
+}
+
+async function del(){
+  if(!$("ok").checked){ msg("m3", "Cochez la case de confirmation.", false); return; }
+  if($("typed").value.trim().toUpperCase() !== "SUPPRIMER"){ msg("m3", "Tapez SUPPRIMER pour confirmer.", false); return; }
+  var b = $("b3"); b.disabled = true; msg("m3", "Suppression en cours…", true);
+  try{
+    var r = await api("/rest/v1/rpc/delete_account", { method: "POST",
+      headers: { "Authorization": "Bearer " + token }, body: "{}" });
+    if(r.ok){ token = null; show("s-done"); return; }
+    msg("m3", "La suppression a échoué. Réessayez, ou écrivez à slaiguedev@gmail.com.", false);
+  }catch(_){ msg("m3", "Connexion impossible. Réessayez.", false); }
+  b.disabled = false;
+}
+
+// Retour du lien e-mail : le jeton arrive dans l'adresse (#access_token=…)
+(async function(){
+  var h = new URLSearchParams(location.hash.replace(/^#/, ""));
+  if(h.get("error_description")){
+    history.replaceState(null, "", location.pathname);
+    tab("link"); msg("m2", "Lien expiré ou déjà utilisé. Demandez-en un nouveau.", false); return;
+  }
+  var t = h.get("access_token");
+  if(!t) return;
+  history.replaceState(null, "", location.pathname);
+  try{
+    var r = await api("/auth/v1/user", { headers: { "Authorization": "Bearer " + t } });
+    if(!r.ok) throw 0;
+    var u = await r.json();
+    token = t; toConfirm(u.email || "");
+  }catch(_){ tab("link"); msg("m2", "Lien invalide. Demandez-en un nouveau.", false); }
+})();
 </script>
 </body>
 </html>
