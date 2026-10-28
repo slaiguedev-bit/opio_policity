@@ -108,42 +108,6 @@ footer{text-align:center;color:var(--muet);font-size:12.5px;padding:0 20px 46px}
   <section class="card">
     <h2>3. Supprimer mon compte</h2>
 
-    <div id="s-choose">
-      <div class="tabs">
-        <button type="button" class="tab on" id="t-pw" onclick="tab('pw')">🔑 Avec mon mot de passe</button>
-        <button type="button" class="tab" id="t-link" onclick="tab('link')">✉️ Par lien e-mail</button>
-      </div>
-
-      <form id="p-pw" onsubmit="return loginPw(event)">
-        <label for="e1">Adresse e-mail du compte</label>
-        <input id="e1" type="email" required autocomplete="email" placeholder="vous@exemple.fr">
-        <label for="pw">Mot de passe</label>
-        <input id="pw" type="password" required autocomplete="current-password">
-        <button class="btn" id="b1" type="submit">Continuer</button>
-        <p class="hint" id="m1" role="status"></p>
-      </form>
-
-      <form id="p-link" onsubmit="return sendLink(event)" hidden>
-        <p class="hint" style="margin-top:4px">Nous envoyons un lien de confirmation à l'adresse du compte. Cela fonctionne aussi pour les comptes créés avec Google.</p>
-        <label for="e2">Adresse e-mail du compte</label>
-        <input id="e2" type="email" required autocomplete="email" placeholder="vous@exemple.fr">
-        <button class="btn" id="b2" type="submit">Envoyer le lien</button>
-        <p class="hint" id="m2" role="status"></p>
-      </form>
-    </div>
-
-    <div id="s-confirm" hidden>
-      <p>Compte vérifié : <strong class="val" id="who"></strong></p>
-      <div class="alerte">Cette action est <strong>définitive</strong> : votre compte, votre profil et vos sondages seront supprimés.</div>
-      <label class="check"><input id="ok" type="checkbox">
-        <span>Je confirme vouloir supprimer définitivement mon compte <strong>Sondages</strong> et les données associées.</span></label>
-      <label for="typed">Tapez <strong>SUPPRIMER</strong> pour confirmer</label>
-      <input id="typed" type="text" autocomplete="off" autocapitalize="characters">
-      <button class="btn danger" id="b3" type="button" onclick="del()">🗑 Supprimer définitivement</button>
-      <button class="btn" style="background:rgba(124,92,255,.12);color:#4a368f;box-shadow:none;margin-left:8px" type="button" onclick="location.href=location.pathname">Annuler</button>
-      <p class="hint" id="m3" role="status"></p>
-    </div>
-
     <div id="s-done" hidden>
       <p class="good">✅ Votre compte a été supprimé.</p>
       <p>Vos données ont été effacées de nos serveurs. Vous pouvez fermer cette page. Merci d'avoir utilisé Sondages.</p>
